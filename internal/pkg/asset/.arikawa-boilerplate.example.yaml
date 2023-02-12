@@ -1,3 +1,8 @@
+# discord defines the parameters for the Discord bot.
+discord:
+  # bot_token is the token of the Discord bot.
+  bot_token: DISCORD_BOT_TOKEN
+
 # logger defines the parameters for the logger.
 logger:
   # path is the path to the log file.
