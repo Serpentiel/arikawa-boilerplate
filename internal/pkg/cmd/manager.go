@@ -4,13 +4,13 @@ package cmd
 import (
 	"net/http"
 
-	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/cachecontainer"
+	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/container"
 	"github.com/Serpentiel/arikawa-boilerplate/pkg/logger"
 	"golang.org/x/text/message"
 )
 
 // NewManager creates a new command manager.
-func NewManager(l logger.Logger, cc *cachecontainer.CacheContainer, hc *http.Client, mp *message.Printer) *Manager {
+func NewManager(l logger.Logger, cc *container.Cache, hc *http.Client, mp *message.Printer) *Manager {
 	cm := &Manager{
 		l:  l,
 		cc: cc,
@@ -32,8 +32,8 @@ func NewManager(l logger.Logger, cc *cachecontainer.CacheContainer, hc *http.Cli
 type Manager struct {
 	// l is the logger instance.
 	l logger.Logger
-	// cc is the cachecontainer.CacheContainer instance.
-	cc *cachecontainer.CacheContainer
+	// cc is the container.Cache instance.
+	cc *container.Cache
 	// hc is the http.Client instance.
 	hc *http.Client
 	// mp is the message.Printer instance.

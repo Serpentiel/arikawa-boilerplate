@@ -4,8 +4,8 @@ package router
 import (
 	"net/http"
 
-	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/cachecontainer"
 	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/cmd"
+	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/container"
 	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/middleware"
 	"github.com/Serpentiel/arikawa-boilerplate/pkg/logger"
 	"github.com/diamondburned/arikawa/v3/api"
@@ -17,7 +17,7 @@ import (
 // NewRouter creates a new Router instance and registers all of the commands.
 func NewRouter(
 	l logger.Logger,
-	cc *cachecontainer.CacheContainer,
+	cc *container.Cache,
 	hc *http.Client,
 	mp *message.Printer,
 	cm *cmd.Manager,

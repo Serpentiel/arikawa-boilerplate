@@ -5,8 +5,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/cachecontainer"
 	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/cmd"
+	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/container"
 	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/presence"
 	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/router"
 	"github.com/Serpentiel/arikawa-boilerplate/pkg/logger"
@@ -23,7 +23,7 @@ func Manager(
 	lc fx.Lifecycle,
 	v *viper.Viper,
 	l logger.Logger,
-	cc *cachecontainer.CacheContainer,
+	cc *container.Cache,
 	hc *http.Client,
 	mp *message.Printer,
 	p *presence.Presence,
