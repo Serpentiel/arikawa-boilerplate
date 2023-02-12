@@ -8,7 +8,7 @@ import (
 	"math/rand"
 	"net/http"
 
-	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/cachecontainer"
+	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/container"
 	"github.com/Serpentiel/arikawa-boilerplate/pkg/logger"
 	"github.com/diamondburned/arikawa/v3/api"
 	"github.com/diamondburned/arikawa/v3/discord"
@@ -121,7 +121,7 @@ var colors = []discord.Color{
 func NewMessageResponse(
 	ctx context.Context,
 	l logger.Logger,
-	cc *cachecontainer.CacheContainer,
+	cc *container.Cache,
 	hc *http.Client,
 ) *MessageResponse {
 	return &MessageResponse{
@@ -140,8 +140,8 @@ type MessageResponse struct {
 	ctx context.Context
 	// l is the logger.
 	l logger.Logger
-	// cc is the cachecontainer.CacheContainer.
-	cc *cachecontainer.CacheContainer
+	// cc is the container.Cache.
+	cc *container.Cache
 	// hc is the http.Client.
 	hc *http.Client
 

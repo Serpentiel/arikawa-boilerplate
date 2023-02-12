@@ -4,7 +4,7 @@ package cmd
 import (
 	"net/http"
 
-	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/cachecontainer"
+	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/container"
 	"github.com/Serpentiel/arikawa-boilerplate/pkg/logger"
 	"github.com/diamondburned/arikawa/v3/api"
 	"github.com/diamondburned/arikawa/v3/api/cmdroute"
@@ -16,8 +16,8 @@ import (
 type Command struct {
 	// l is the logger instance.
 	l logger.Logger
-	// cc is the cachecontainer.CacheContainer instance.
-	cc *cachecontainer.CacheContainer
+	// cc is the container.Cache instance.
+	cc *container.Cache
 	// hc is the http.Client instance.
 	hc *http.Client
 	// mp is the message.Printer instance.

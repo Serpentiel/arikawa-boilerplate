@@ -25,7 +25,7 @@ var rootCmd = &cobra.Command{
 				provide.Logger,
 
 				provide.RistrettoStore,
-				provide.CacheContainer,
+				provide.Cache,
 
 				provide.HTTPClient,
 

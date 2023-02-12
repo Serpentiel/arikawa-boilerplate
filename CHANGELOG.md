@@ -9,7 +9,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <!-- ### Added -->
 
-<!-- ### Changed -->
+### Changed
+
+- refactor(cachecontainer): rename pkg to container
 
 <!-- ### Deprecated -->
 

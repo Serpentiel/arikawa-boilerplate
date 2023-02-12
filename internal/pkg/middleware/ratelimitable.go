@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/builder"
-	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/cachecontainer"
+	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/container"
 	"github.com/Serpentiel/arikawa-boilerplate/pkg/logger"
 	"github.com/diamondburned/arikawa/v3/api"
 	"github.com/diamondburned/arikawa/v3/api/cmdroute"
@@ -15,7 +15,7 @@ import (
 )
 
 // RateLimitable returns a middleware that rate limits users.
-func RateLimitable(l logger.Logger, cc *cachecontainer.CacheContainer, hc *http.Client) cmdroute.Middleware {
+func RateLimitable(l logger.Logger, cc *container.Cache, hc *http.Client) cmdroute.Middleware {
 	const rateLimitSeconds = 3
 
 	rateLimitedUsers := map[discord.UserID]struct{}{}
