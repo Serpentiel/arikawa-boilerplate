@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Serpentiel/go-cli/internal/pkg/asset"
+	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/asset"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"go.uber.org/fx"
@@ -15,7 +15,7 @@ import (
 func Viper(lc fx.Lifecycle, cmd *cobra.Command) (*viper.Viper, error) {
 	const (
 		// configFileName is the name of the config file.
-		configFileName string = ".go-cli"
+		configFileName string = ".arikawa-boilerplate"
 
 		// configFileMode is the mode that the config file will be created with.
 		configFileMode os.FileMode = 0660

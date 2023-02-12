@@ -2,7 +2,7 @@
 <div id="top"></div>
 <!-- markdownlint-restore -->
 
-# Contributing to go-cli
+# Contributing to arikawa-boilerplate
 
 First off, thanks for taking the time to contribute! ❤️
 
@@ -82,8 +82,9 @@ project and show your appreciation, which we would also be very happy about:
 ## Code of Conduct
 
 This project and everyone participating in it is governed by
-our [Code of Conduct](https://github.com/Serpentiel/go-cli/blob/master/CODE_OF_CONDUCT.md). By participating, you are
-expected to uphold this code. Please report unacceptable behavior via any contact method available to you.
+our [Code of Conduct](https://github.com/Serpentiel/arikawa-boilerplate/blob/master/CODE_OF_CONDUCT.md).
+By participating, you are expected to uphold this code. Please report unacceptable behavior via any contact method
+available to you.
 
 <!-- markdownlint-disable -->
 <p align="right"><a href="#top">(back to top)</a></p>
@@ -92,17 +93,17 @@ expected to uphold this code. Please report unacceptable behavior via any contac
 ## I Have a Question
 
 > **N.B.** If you want to ask a question, we assume that you have read the
-> available [documentation](https://github.com/Serpentiel/go-cli/wiki).
+> available [documentation](https://github.com/Serpentiel/arikawa-boilerplate/wiki).
 
-Before you ask a question, it is best to search for existing [issues](https://github.com/Serpentiel/go-cli/issues)
+Before you ask a question, it is best to search for existing [issues](https://github.com/Serpentiel/arikawa-boilerplate/issues)
 that might help you. In case you have found a suitable issue and still need clarification, you can write your question
 in this issue. It is also advisable to search the Internet for answers first.
 
 If you then still feel the need to ask a question and need clarification, we recommend the following:
 
-- Open an [issue](https://github.com/Serpentiel/go-cli/issues/new)
+- Open an [issue](https://github.com/Serpentiel/arikawa-boilerplate/issues/new)
 - Provide as much context as you can about what you are running into
-- Provide the version of **go-cli**, platform, OS and its version, depending on what seems relevant
+- Provide the version of **arikawa-boilerplate**, platform, OS and its version, depending on what seems relevant
 
 We will then take care of the issue as soon as possible.
 
@@ -125,14 +126,14 @@ following steps in advance to help us fix any potential bug as fast as possible.
 
 - Make sure that you are using the latest version
 - Determine if your bug is really a bug and not an error on your side, e.g. using incompatible environment
-  components/versions—make sure that you have read the [documentation](https://github.com/Serpentiel/go-cli/wiki).
+  components/versions—make sure that you have read the [documentation](https://github.com/Serpentiel/arikawa-boilerplate/wiki).
   If you are looking for support, you might want to check [this section](#i-have-a-question))
 - Check if other users have experienced—and potentially already solved—the same issue you are having, check if there is
   not already a bug report existing for your bug or error
-  in [GitHub Issues](https://github.com/Serpentiel/go-cli/issues?q=label:bug)
+  in [GitHub Issues](https://github.com/Serpentiel/arikawa-boilerplate/issues?q=label:bug)
 - Make sure to search the Internet—including StackOverflow—to see if users outside of the GitHub community have
   discussed the issue
-- Check if the issue is reproducible on the latest and/or previous versions of **go-cli**
+- Check if the issue is reproducible on the latest and/or previous versions of **arikawa-boilerplate**
 - Collect some relevant information about the bug:
   - Stack trace
   - Platform, OS and its version
@@ -144,11 +145,11 @@ following steps in advance to help us fix any potential bug as fast as possible.
 
 > **N.B.** You must never report security related issues, vulnerabilities or bugs including sensitive information to the
 > issue tracker, or elsewhere in public. Instead sensitive bugs must be reported according to
-> our [security policy](https://github.com/Serpentiel/go-cli/blob/main/SECURITY.mdZ).
+> our [security policy](https://github.com/Serpentiel/arikawa-boilerplate/blob/main/SECURITY.mdZ).
 
 We use GitHub Issues to track bugs and errors. If you run into an issue with the project:
 
-- Open an [issue](https://github.com/Serpentiel/go-cli/issues/new?label=bug)
+- Open an [issue](https://github.com/Serpentiel/arikawa-boilerplate/issues/new?label=bug)
 - Explain the behavior you would expect and the actual behavior
 - Please provide as much context as possible and describe the reproduction steps that someone else can follow to
   recreate the issue on their own—for good bug reports you should isolate the problem and create a reduced test case
@@ -166,16 +167,16 @@ Once the bug report is filed:
 
 ### Suggesting Enhancements
 
-This section guides you through submitting an enhancement suggestion for **go-cli**, including completely new
+This section guides you through submitting an enhancement suggestion for **arikawa-boilerplate**, including completely new
 features and minor improvements to existing functionality. Following these guidelines will help maintainers and the
 community to understand your suggestion and find related suggestions.
 
 #### Before Submitting an Enhancement
 
-- Make sure that you are using the latest version of **go-cli**
-- Read the [documentation](https://github.com/Serpentiel/go-cli/wiki) carefully and find out if the functionality is
-  already covered, maybe by an individual configuration
-- Perform a [search](https://github.com/Serpentiel/go-cli/issues) to see if the enhancement has already been
+- Make sure that you are using the latest version of **arikawa-boilerplate**
+- Read the [documentation](https://github.com/Serpentiel/arikawa-boilerplate/wiki) carefully and find out if the
+  functionality is already covered, maybe by an individual configuration
+- Perform a [search](https://github.com/Serpentiel/arikawa-boilerplate/issues) to see if the enhancement has already been
   suggested—if it has, add a comment to the existing issue instead of opening a new one
 - Find out whether your idea fits with the scope and aims of the project—it is up to you to make a strong case to
   convince the project's developers of the merits of this feature—keep in mind that we want features that will be useful
@@ -183,7 +184,7 @@ community to understand your suggestion and find related suggestions.
 
 #### How Do I Submit a Good Enhancement Suggestion?
 
-Enhancement suggestions are tracked as [GitHub Issues](https://github.com/Serpentiel/go-cli/issues).
+Enhancement suggestions are tracked as [GitHub Issues](https://github.com/Serpentiel/arikawa-boilerplate/issues).
 
 - Use a clear and descriptive title for the issue to identify the suggestion
 - Provide a step-by-step description of the suggested enhancement, in as many details as possible
@@ -191,7 +192,7 @@ Enhancement suggestions are tracked as [GitHub Issues](https://github.com/Serpen
   also tell which alternatives do not work for you
 - You may want to include screenshots and animated GIFs which help you demonstrate the steps, or point out the part
   to which the suggestion is related to
-- Explain why this enhancement would be useful to most **go-cli** users—you may also want to point out the other
+- Explain why this enhancement would be useful to most **arikawa-boilerplate** users—you may also want to point out the other
   projects that solved it better and which could serve as inspiration
 
 <!-- markdownlint-disable -->

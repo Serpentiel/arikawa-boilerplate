@@ -2,7 +2,7 @@
 package main
 
 import (
-	"github.com/Serpentiel/go-cli/cmd"
+	"github.com/Serpentiel/arikawa-boilerplate/cmd"
 )
 
 // main is the entry point for the application.

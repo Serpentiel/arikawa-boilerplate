@@ -5,5 +5,5 @@ import _ "embed" // embed is imported as a blank import to let us embed the asse
 
 // ExampleConfig is the example config for the application.
 //
-//go:embed .go-cli.example.yaml
+//go:embed .arikawa-boilerplate.example.yaml
 var ExampleConfig []byte

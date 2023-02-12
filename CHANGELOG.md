@@ -23,11 +23,11 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
-- feat: add go-cli
+- feat: add arikawa-boilerplate
 
 ### Changed
 
 - docs(repo): fill template files
 
-[Unreleased]: https://github.com/Serpentiel/go-cli/compare/v1.0.0...main
-[1.0.0]: https://github.com/Serpentiel/go-cli/compare/936b337...v1.0.0
+[Unreleased]: https://github.com/Serpentiel/arikawa-boilerplate/compare/v1.0.0...main
+[1.0.0]: https://github.com/Serpentiel/arikawa-boilerplate/compare/936b337...v1.0.0
