@@ -19,4 +19,15 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <!-- ### Security -->
 
-[Unreleased]: https://github.com/Serpentiel/arikawa-boilerplate/compare/bd285fa...main
+## [1.0.0] - 2023-02-13
+
+### Added
+
+- feat: add arikawa-boilerplate
+
+### Changed
+
+- docs(repo): fill template files
+
+[Unreleased]: https://github.com/Serpentiel/arikawa-boilerplate/compare/v1.0.0...main
+[1.0.0]: https://github.com/Serpentiel/arikawa-boilerplate/compare/bd285fa...v1.0.0
