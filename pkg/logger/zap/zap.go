@@ -4,7 +4,7 @@ package zap
 import (
 	"os"
 
-	"github.com/Serpentiel/go-cli/pkg/logger"
+	"github.com/Serpentiel/arikawa-boilerplate/pkg/logger"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"

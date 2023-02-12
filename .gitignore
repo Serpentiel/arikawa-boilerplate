@@ -79,5 +79,5 @@ Temporary Items
 # End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,go
 
 # Project specific
-go-cli
-go-cli.log
+arikawa-boilerplate
+arikawa-boilerplate.log

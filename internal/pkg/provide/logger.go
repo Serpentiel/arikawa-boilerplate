@@ -4,9 +4,9 @@ package provide
 import (
 	"context"
 
-	"github.com/Serpentiel/go-cli/pkg/logger"
-	"github.com/Serpentiel/go-cli/pkg/logger/asynczap"
-	"github.com/Serpentiel/go-cli/pkg/logger/zap"
+	"github.com/Serpentiel/arikawa-boilerplate/pkg/logger"
+	"github.com/Serpentiel/arikawa-boilerplate/pkg/logger/asynczap"
+	"github.com/Serpentiel/arikawa-boilerplate/pkg/logger/zap"
 	"github.com/spf13/viper"
 	"go.uber.org/fx"
 )

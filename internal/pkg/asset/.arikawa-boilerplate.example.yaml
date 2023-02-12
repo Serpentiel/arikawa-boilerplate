@@ -1,7 +1,7 @@
 # logger defines the parameters for the logger.
 logger:
   # path is the path to the log file.
-  path: go-cli.log
+  path: arikawa-boilerplate.log
 
   # retain defines the parameters for log file retention.
   retain:

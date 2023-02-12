@@ -4,7 +4,7 @@
 
 # Security Policy
 
-go-cli has adopted this security disclosure and response policy to ensure we responsibly handle critical
+arikawa-boilerplate has adopted this security disclosure and response policy to ensure we responsibly handle critical
 issues.
 
 <!-- markdownlint-disable -->
@@ -42,7 +42,7 @@ issues.
 
 ## Supported Versions
 
-The go-cli project maintains release branches for the three most recent minor releases. Applicable fixes,
+The arikawa-boilerplate project maintains release branches for the three most recent minor releases. Applicable fixes,
 including security fixes, may be backported to those three release branches, depending on severity and feasibility.
 
 <!-- markdownlint-disable -->
@@ -52,21 +52,21 @@ including security fixes, may be backported to those three release branches, dep
 ## Reporting a Vulnerability—Private Disclosure Process
 
 Security is of the highest importance and all security vulnerabilities or suspected security vulnerabilities should be
-reported to go-cli privately, to minimize attacks against current users of go-cli before they are fixed.
-Vulnerabilities will be investigated and patched on the next patch or minor release as soon as possible. This
-information could be kept entirely internal to the project.
+reported to arikawa-boilerplate privately, to minimize attacks against current users of arikawa-boilerplate before
+they are fixed. Vulnerabilities will be investigated and patched on the next patch or minor release as soon as possible.
+This information could be kept entirely internal to the project.
 
-If you know of a publicly disclosed security vulnerability for go-cli, please **IMMEDIATELY** contact us via any
-contact method available to you to inform our team.
+If you know of a publicly disclosed security vulnerability for arikawa-boilerplate, please **IMMEDIATELY** contact us
+via any contact method available to you to inform our team.
 
 > **N.B.** Do not file public issues on GitHub for security vulnerabilities.
 
 To report a vulnerability or a security-related issue, please contact us via any contact method available to you with
-the details of the vulnerability. The message will be fielded by the our team, which is made up of go-cli
+the details of the vulnerability. The message will be fielded by the our team, which is made up of arikawa-boilerplate
 maintainers who have committer and release permissions. Messages will be addressed within 3 business days, including a
 detailed plan to investigate the issue and any potential workarounds to perform in the meantime. Do not report
 non-security-impacting bugs through this channel.
-Use [GitHub Issues](https://github.com/Serpentiel/go-cli/issues/new/choose) instead.
+Use [GitHub Issues](https://github.com/Serpentiel/arikawa-boilerplate/issues/new/choose) instead.
 
 ### Proposed Message Content
 
@@ -74,10 +74,10 @@ Please, include the following information to your message:
 
 - Basic identity information, such as your name and your affiliation or company
 - Detailed steps to reproduce the vulnerability, e.g. PoC, screenshots, depending on what seems relevant
-- Description of the effects of the vulnerability on go-cli and the related hardware and software
+- Description of the effects of the vulnerability on arikawa-boilerplate and the related hardware and software
   configurations, so that our team can reproduce it
-- How the vulnerability affects go-cli usage and an estimation of the attack surface, if there is one
-- List other projects or dependencies that were used in conjunction with go-cli to produce the vulnerability
+- How the vulnerability affects arikawa-boilerplate usage and an estimation of the attack surface, if there is one
+- List other projects or dependencies that were used in conjunction with arikawa-boilerplate to produce the vulnerability
 
 <!-- markdownlint-disable -->
 <p align="right"><a href="#top">(back to top)</a></p>
@@ -85,10 +85,10 @@ Please, include the following information to your message:
 
 ## When to Report a Vulnerability
 
-- When you think go-cli has a potential security vulnerability
-- When you suspect a potential vulnerability but you are unsure that it impacts go-cli
-- When you know of or suspect a potential vulnerability on another project that is used by go-cli, e.g.
-  dependencies of go-cli
+- When you think arikawa-boilerplate has a potential security vulnerability
+- When you suspect a potential vulnerability but you are unsure that it impacts arikawa-boilerplate
+- When you know of or suspect a potential vulnerability on another project that is used by arikawa-boilerplate, e.g.
+  dependencies of arikawa-boilerplate
 
 <!-- markdownlint-disable -->
 <p align="right"><a href="#top">(back to top)</a></p>
@@ -118,16 +118,16 @@ Our team will respond to vulnerability reports as follows:
    straightforward mitigation, we expect report date to public disclosure date to be on the order of 14 business days.
    Our team holds the final say when setting a public disclosure date
 8. Once the fix is confirmed, our team will patch the vulnerability in the next patch or minor release, and
-   backport a patch release into all earlier supported releases. Upon release of the patched version of go-cli,
+   backport a patch release into all earlier supported releases. Upon release of the patched version of arikawa-boilerplate,
    we will follow the [Public Disclosure Process](#public-disclosure-process)
 
 ### Public Disclosure Process
 
-Our team publishes a public [advisory](https://github.com/Serpentiel/go-cli/security/advisories) to the go-cli
+Our team publishes a public [advisory](https://github.com/Serpentiel/arikawa-boilerplate/security/advisories) to the arikawa-boilerplate
 community via GitHub. In most cases, additional communication via Slack, Twitter, blog and other channels will assist in
-educating go-cli users and rolling out the patched release to affected users.
+educating arikawa-boilerplate users and rolling out the patched release to affected users.
 
-Our team will also publish any mitigating steps users can take until the fix can be applied to their go-cli
+Our team will also publish any mitigating steps users can take until the fix can be applied to their arikawa-boilerplate
 setup.
 
 <!-- markdownlint-disable -->

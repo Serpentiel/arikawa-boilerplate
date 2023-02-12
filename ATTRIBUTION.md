@@ -4,7 +4,7 @@
 
 # Attribution
 
-A special thank you to the people and projects that helped make go-cli possible.
+A special thank you to the people and projects that helped make arikawa-boilerplate possible.
 
 <!-- markdownlint-disable -->
 <details>
@@ -29,8 +29,8 @@ A special thank you to the people and projects that helped make go-cli possible.
 
 <!-- markdownlint-disable -->
 <div align="center">
-  <a href="https://github.com/Serpentiel/go-cli/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=Serpentiel/go-cli">
+  <a href="https://github.com/Serpentiel/arikawa-boilerplate/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=Serpentiel/arikawa-boilerplate">
   </a>
 </div>
 <!-- markdownlint-restore -->

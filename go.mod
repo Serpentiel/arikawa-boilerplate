@@ -1,4 +1,4 @@
-module github.com/Serpentiel/go-cli
+module github.com/Serpentiel/arikawa-boilerplate
 
 go 1.19
 

@@ -2,7 +2,7 @@
 package asynczap
 
 import (
-	"github.com/Serpentiel/go-cli/pkg/logger"
+	"github.com/Serpentiel/arikawa-boilerplate/pkg/logger"
 	"go.uber.org/zap/zapcore"
 )
 

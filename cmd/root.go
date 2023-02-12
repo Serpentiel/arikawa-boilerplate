@@ -4,14 +4,14 @@ package cmd
 import (
 	"os"
 
-	"github.com/Serpentiel/go-cli/internal/pkg/provide"
+	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/provide"
 	"github.com/spf13/cobra"
 	"go.uber.org/fx"
 )
 
 // rootCmd is the rootCmd command for the application.
 var rootCmd = &cobra.Command{
-	Use: "go-cli",
+	Use: "arikawa-boilerplate",
 	Run: func(cmd *cobra.Command, args []string) {
 		fx.New(
 			fx.Supply(cmd),
