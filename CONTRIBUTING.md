@@ -201,11 +201,14 @@ Enhancement suggestions are tracked as [GitHub Issues](https://github.com/Serpen
 
 ### Your First Code Contribution
 
-<!-- TODO -->
+Please, make sure to test everything locally before creating a PR. When creating a PR, please fill the provided
+template.
 
 ### Improving the Documentation
 
-<!-- TODO -->
+You are very welcome to help us to improve the documentation. Please, make sure to check your grammar twice before
+submitting the improvement, and try to figure out whether or not the improvement that you are trying to add is already
+documented.
 
 <!-- markdownlint-disable -->
 <p align="right"><a href="#top">(back to top)</a></p>
@@ -213,11 +216,18 @@ Enhancement suggestions are tracked as [GitHub Issues](https://github.com/Serpen
 
 ## Styleguides
 
-<!-- TODO -->
+This project does not possess any specific styleguides. Please, make sure to follow general best practices used in Go
+community.
+
+You can use the following resources for the reference:
+
+- [Uber Go Style Guide](https://github.com/uber-go/guide/blob/master/style.md)
+- [Effective Go](https://go.dev/doc/effective_go)
 
 ### Commit Messages
 
-<!-- TODO -->
+This project adheres to the [Conventional Commits](https://conventionalcommits.org/en/v1.0.0/) specification.
+Please, make sure that your commit messages follow that specification.
 
 <!-- markdownlint-disable -->
 <p align="right"><a href="#top">(back to top)</a></p>
@@ -225,7 +235,8 @@ Enhancement suggestions are tracked as [GitHub Issues](https://github.com/Serpen
 
 ## Join the Project Team
 
-<!-- TODO -->
+You will be offered to join the project team if and when your contributions to the project are deemed sufficiently
+frequent and good by the members of the existing team.
 
 <!-- markdownlint-disable -->
 <p align="right"><a href="#top">(back to top)</a></p>
