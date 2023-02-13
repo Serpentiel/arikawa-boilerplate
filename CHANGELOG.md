@@ -14,6 +14,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - refactor(cachecontainer): rename pkg to container
 - docs(repo): update CONTRIBUTING.md
 - refactor(ratelimitable): improve concurrency logic
+- refactor(internal): drop pkg layer
 
 <!-- ### Deprecated -->
 

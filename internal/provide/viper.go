@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/asset"
+	"github.com/Serpentiel/arikawa-boilerplate/internal/assets"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"go.uber.org/fx"
@@ -48,7 +48,7 @@ func Viper(lc fx.Lifecycle, cmd *cobra.Command) (*viper.Viper, error) {
 	v.AutomaticEnv()
 
 	if err := v.ReadInConfig(); err != nil {
-		err = os.WriteFile(configFile, asset.ExampleConfig, configFileMode)
+		err = os.WriteFile(configFile, assets.ExampleConfig, configFileMode)
 		if err != nil {
 			return nil, err
 		}

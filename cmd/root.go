@@ -4,9 +4,9 @@ package cmd
 import (
 	"os"
 
-	dcmd "github.com/Serpentiel/arikawa-boilerplate/internal/pkg/cmd"
-	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/presence"
-	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/provide"
+	dcmd "github.com/Serpentiel/arikawa-boilerplate/internal/cmd"
+	"github.com/Serpentiel/arikawa-boilerplate/internal/presence"
+	"github.com/Serpentiel/arikawa-boilerplate/internal/provide"
 	"github.com/diamondburned/arikawa/v3/session/shard"
 	"github.com/gertd/go-pluralize"
 	"github.com/spf13/cobra"

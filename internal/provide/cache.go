@@ -2,7 +2,7 @@
 package provide
 
 import (
-	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/container"
+	"github.com/Serpentiel/arikawa-boilerplate/internal/container"
 	"github.com/eko/gocache/lib/v4/cache"
 	ristrettostore "github.com/eko/gocache/store/ristretto/v4"
 )
