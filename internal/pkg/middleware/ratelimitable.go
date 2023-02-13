@@ -4,6 +4,7 @@ package middleware
 import (
 	"context"
 	"net/http"
+	"sync"
 	"time"
 
 	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/builder"
@@ -12,13 +13,20 @@ import (
 	"github.com/diamondburned/arikawa/v3/api"
 	"github.com/diamondburned/arikawa/v3/api/cmdroute"
 	"github.com/diamondburned/arikawa/v3/discord"
+	"golang.org/x/time/rate"
 )
 
 // RateLimitable returns a middleware that rate limits users.
 func RateLimitable(l logger.Logger, cc *container.Cache, hc *http.Client) cmdroute.Middleware {
-	const rateLimitSeconds = 3
+	const (
+		// rateLimitSeconds is the amount of seconds a user is rate limited for.
+		rateLimitSeconds = 3
 
-	rateLimitedUsers := map[discord.UserID]struct{}{}
+		// rateLimitBurst is the amount of command interactions a user can send before being rate limited.
+		rateLimitBurst = 1
+	)
+
+	userLimiters := &sync.Map{}
 
 	return func(next cmdroute.InteractionHandler) cmdroute.InteractionHandler {
 		return cmdroute.InteractionHandlerFunc(
@@ -27,7 +35,17 @@ func RateLimitable(l logger.Logger, cc *container.Cache, hc *http.Client) cmdrou
 					return next.HandleInteraction(ctx, e)
 				}
 
-				if _, ok := rateLimitedUsers[e.SenderID()]; ok {
+				v, ok := userLimiters.Load(e.Member.User.ID)
+				if !ok {
+					v, _ = userLimiters.LoadOrStore(
+						e.Member.User.ID,
+						rate.NewLimiter(rate.Every(rateLimitSeconds*time.Second), rateLimitBurst),
+					)
+				}
+
+				limiter, _ := v.(*rate.Limiter)
+
+				if !limiter.Allow() {
 					return &api.InteractionResponse{
 						Type: api.MessageInteractionWithSource,
 						Data: builder.NewMessageResponse(ctx, l, cc, hc).
@@ -35,18 +53,6 @@ func RateLimitable(l logger.Logger, cc *container.Cache, hc *http.Client) cmdrou
 							Build(),
 					}
 				}
-
-				rateLimitedUsers[e.SenderID()] = struct{}{}
-
-				t := time.NewTicker(rateLimitSeconds * time.Second)
-
-				go func() {
-					<-t.C
-
-					t.Stop()
-
-					delete(rateLimitedUsers, e.SenderID())
-				}()
 
 				return next.HandleInteraction(ctx, e)
 			},
