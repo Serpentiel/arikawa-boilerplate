@@ -1,5 +1,5 @@
-// Package asset is the package that contains all of the assets for the application.
-package asset
+// Package assets is the package that contains all of the assets for the application.
+package assets
 
 import _ "embed" // embed is imported as a blank import to let us embed the assets.
 

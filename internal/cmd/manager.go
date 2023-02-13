@@ -4,7 +4,7 @@ package cmd
 import (
 	"net/http"
 
-	"github.com/Serpentiel/arikawa-boilerplate/internal/pkg/container"
+	"github.com/Serpentiel/arikawa-boilerplate/internal/container"
 	"github.com/Serpentiel/arikawa-boilerplate/pkg/logger"
 	"golang.org/x/text/message"
 )
