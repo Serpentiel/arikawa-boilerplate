@@ -12,6 +12,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 
 - refactor(cachecontainer): rename pkg to container
+- docs(repo): update CONTRIBUTING.md
 
 <!-- ### Deprecated -->
 
