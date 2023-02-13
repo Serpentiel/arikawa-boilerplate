@@ -73,6 +73,7 @@ var echo = &Command{
 
 var echoAutocompleterFunc = func(cmd *Command, s *state.State) cmdroute.AutocompleterFunc {
 	return func(ctx context.Context, data cmdroute.AutocompleteData) api.AutocompleteChoices {
+		// maxAutocompleteChoices is the maximum number of autocomplete choices to return.
 		const maxAutocompleteChoices = 25
 
 		if data.Options.Focused().Name != "text" {
