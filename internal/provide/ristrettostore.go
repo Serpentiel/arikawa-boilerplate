@@ -9,8 +9,13 @@ import (
 // RistrettoStore is a function which provides a ristrettostore.RistrettoStore instance.
 func RistrettoStore() (*ristrettostore.RistrettoStore, error) {
 	const (
+		// numCounters is the number of counters that the cache will use.
 		numCounters = 1e7
-		maxCost     = 1 << 30
+
+		// maxCost is the maximum cost that the cache will use.
+		maxCost = 1 << 30
+
+		// bufferItems is the number of items that the cache will buffer.
 		bufferItems = 64
 	)
 

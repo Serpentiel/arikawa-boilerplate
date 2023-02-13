@@ -15,6 +15,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - docs(repo): update CONTRIBUTING.md
 - refactor(ratelimitable): improve concurrency logic
 - refactor(internal): drop pkg layer
+- docs(code): comment constants
 
 <!-- ### Deprecated -->
 

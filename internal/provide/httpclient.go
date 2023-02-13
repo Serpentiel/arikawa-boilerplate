@@ -8,6 +8,7 @@ import (
 
 // HTTPClient is a function which provides an http.Client instance.
 func HTTPClient() *http.Client {
+	// timeoutSeconds is the number of seconds that the HTTP client will wait before timing out.
 	const timeoutSeconds = 10
 
 	return &http.Client{
