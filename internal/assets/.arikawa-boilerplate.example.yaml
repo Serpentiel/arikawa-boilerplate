@@ -1,8 +1,3 @@
-# discord defines the parameters for the Discord bot.
-discord:
-  # bot_token is the token of the Discord bot.
-  bot_token: DISCORD_BOT_TOKEN
-
 # logger defines the parameters for the logger.
 logger:
   # path is the path to the log file.
@@ -15,3 +10,24 @@ logger:
 
     # copies is the number of log files to retain.
     copies: 3
+
+# http defines the parameters for the HTTP server.
+http:
+  # enabled defines if the HTTP server should be enabled.
+  enabled: true
+
+  # host is the host to bind the HTTP server to.
+  host: 0.0.0.0
+
+  # port is the port to bind the HTTP server to.
+  port: 8080
+
+# discord defines the parameters for the Discord application and bot.
+discord:
+  app:
+    # public_key is the public key of the Discord application.
+    public_key: DISCORD_PUBLIC_KEY
+
+  bot:
+    # token is the token of the Discord bot.
+    token: DISCORD_BOT_TOKEN

@@ -2,7 +2,6 @@
 package provide
 
 import (
-	"context"
 	"net/http"
 
 	"github.com/Serpentiel/arikawa-boilerplate/internal/cmd"
@@ -14,13 +13,11 @@ import (
 	"github.com/diamondburned/arikawa/v3/session/shard"
 	"github.com/diamondburned/arikawa/v3/state"
 	"github.com/spf13/viper"
-	"go.uber.org/fx"
 	"golang.org/x/text/message"
 )
 
 // Manager is a function which provides a *shard.Manager instance.
 func Manager(
-	lc fx.Lifecycle,
 	v *viper.Viper,
 	l logger.Logger,
 	cc *container.Cache,
@@ -31,8 +28,8 @@ func Manager(
 ) (*shard.Manager, error) {
 	isFirstShard := true
 
-	m, err := shard.NewManager(
-		"Bot "+v.GetString("discord.bot_token"),
+	return shard.NewManager(
+		"Bot "+v.GetString("discord.bot.token"),
 		state.NewShardFunc(func(m *shard.Manager, s *state.State) {
 			s.AddIntents(gateway.IntentGuilds)
 
@@ -61,18 +58,4 @@ func Manager(
 			s.AddInteractionHandler(r)
 		}),
 	)
-	if err != nil {
-		return nil, err
-	}
-
-	lc.Append(fx.Hook{
-		OnStart: func(ctx context.Context) error {
-			return m.Open(ctx)
-		},
-		OnStop: func(context.Context) error {
-			return m.Close()
-		},
-	})
-
-	return m, nil
 }

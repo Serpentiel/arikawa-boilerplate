@@ -45,6 +45,8 @@ func Viper(lc fx.Lifecycle, cmd *cobra.Command) (*viper.Viper, error) {
 		v.SetConfigFile(configFile)
 	}
 
+	v.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
+
 	v.AutomaticEnv()
 
 	if err := v.ReadInConfig(); err != nil {
