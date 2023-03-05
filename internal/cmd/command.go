@@ -12,6 +12,14 @@ import (
 	"golang.org/x/text/message"
 )
 
+const (
+	// maxAutocompleteChoices is the maximum number of autocomplete choices to return.
+	maxAutocompleteChoices = 25
+
+	// maxAutocompleteStringChoiceLength is the maximum length of a string choice.
+	maxAutocompleteStringChoiceLength = 100
+)
+
 // Command is the struct that contains all of the information about a command.
 type Command struct {
 	// l is the logger instance.
