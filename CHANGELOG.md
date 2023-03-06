@@ -11,6 +11,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - feat(bot)!: interaction server support
 - feat(cmd): anime
+- fix(anime): add sanity checks
 
 ### Changed
 

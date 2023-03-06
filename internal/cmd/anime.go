@@ -82,11 +82,21 @@ var anime = &Command{
 		},
 	},
 	HandlerFunc: func(cmd *Command, s *state.State) cmdroute.CommandHandlerFunc {
+		var errResponse = builder.NewMessageResponse(context.Background(), cmd.l, cmd.cc, cmd.hc).
+			Error("There was an error while searching for the anime with the provided MAL ID.").
+			Build()
+
 		return func(ctx context.Context, data cmdroute.CommandData) *api.InteractionResponseData {
 			opt := data.Options.Find("query").String()
 			if len(opt) == 0 {
 				return builder.NewMessageResponse(ctx, cmd.l, cmd.cc, cmd.hc).
 					Error("You must provide a MAL ID to search for.").
+					Build()
+			}
+
+			if _, err := strconv.Atoi(opt); err != nil {
+				return builder.NewMessageResponse(ctx, cmd.l, cmd.cc, cmd.hc).
+					Error("Provided MAL ID is not a number.").
 					Build()
 			}
 
@@ -103,14 +113,15 @@ var anime = &Command{
 			// result is the result of the anime lookup by ID.
 			type result struct {
 				// Data is the data of the anime.
-				Data animeData `json:"data"`
+				Data  animeData `json:"data"`
+				Error string    `json:"error"`
 			}
 
 			resp, err := cmd.hc.Get(fmt.Sprintf("https://api.jikan.moe/v4/anime/%s", url.QueryEscape(opt)))
 			if err != nil {
 				cmd.l.Error("failed to get anime", "error", err)
 
-				return nil
+				return errResponse
 			}
 			defer func() {
 				err = resp.Body.Close()
@@ -124,7 +135,13 @@ var anime = &Command{
 			if err = json.NewDecoder(resp.Body).Decode(&res); err != nil {
 				cmd.l.Error("failed to decode anime response", "error", err)
 
-				return nil
+				return errResponse
+			}
+
+			if res.Error != "" {
+				cmd.l.Error("anime response contained an error", "error", res.Error)
+
+				return errResponse
 			}
 
 			d := res.Data
