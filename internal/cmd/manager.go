@@ -23,6 +23,7 @@ func NewManager(l logger.Logger, cc *container.Cache, hc *http.Client, mp *messa
 	cm.RegisterCommands(
 		ping,
 		echo,
+		anime,
 	)
 
 	return cm

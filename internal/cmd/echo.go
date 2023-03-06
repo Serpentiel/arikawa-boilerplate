@@ -73,9 +73,6 @@ var echo = &Command{
 
 var echoAutocompleterFunc = func(cmd *Command, s *state.State) cmdroute.AutocompleterFunc {
 	return func(ctx context.Context, data cmdroute.AutocompleteData) api.AutocompleteChoices {
-		// maxAutocompleteChoices is the maximum number of autocomplete choices to return.
-		const maxAutocompleteChoices = 25
-
 		if data.Options.Focused().Name != "text" {
 			return nil
 		}
@@ -95,7 +92,9 @@ var echoAutocompleterFunc = func(cmd *Command, s *state.State) cmdroute.Autocomp
 			return choices
 		}
 
+		// suggestion is the struct that represents a suggestion from the Datamuse API.
 		type suggestion struct {
+			// Word is the suggested word.
 			Word string `json:"word"`
 		}
 
