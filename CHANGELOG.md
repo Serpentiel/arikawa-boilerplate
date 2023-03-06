@@ -7,6 +7,20 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+<!-- ### Added -->
+
+<!-- ### Changed -->
+
+<!-- ### Deprecated -->
+
+<!-- ### Removed -->
+
+<!-- ### Fixed -->
+
+<!-- ### Security -->
+
+## [2.0.0] - 2023-03-07
+
 ### Added
 
 - feat(bot)!: interaction server support
@@ -21,14 +35,6 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - refactor(internal): drop pkg layer
 - docs(code): comment constants
 
-<!-- ### Deprecated -->
-
-<!-- ### Removed -->
-
-<!-- ### Fixed -->
-
-<!-- ### Security -->
-
 ## [1.0.0] - 2023-02-13
 
 ### Added
@@ -39,5 +45,6 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - docs(repo): fill template files
 
-[Unreleased]: https://github.com/Serpentiel/arikawa-boilerplate/compare/v1.0.0...main
+[Unreleased]: https://github.com/Serpentiel/arikawa-boilerplate/compare/v2.0.0...main
+[2.0.0]: https://github.com/Serpentiel/arikawa-boilerplate/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/Serpentiel/arikawa-boilerplate/compare/bd285fa...v1.0.0
