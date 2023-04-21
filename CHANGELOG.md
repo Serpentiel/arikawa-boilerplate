@@ -12,6 +12,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 <!-- ### Changed -->
 
 - chore(golangci-lint): drop forced version
+- ci(lint): go-version switch to go.mod
 
 <!-- ### Deprecated -->
 
