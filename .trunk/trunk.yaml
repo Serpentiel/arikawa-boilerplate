@@ -1,19 +1,20 @@
 version: 0.1
 cli:
-  version: 1.4.1
+  version: 1.8.1
 plugins:
   sources:
     - id: trunk
-      ref: v0.0.10
+      ref: v0.0.16
       uri: https://github.com/trunk-io/plugins
 lint:
   enabled:
-    - actionlint@1.6.23
-    - gitleaks@8.15.3
-    # - golangci-lint@1.51.1 # This currently does not works for some reason.
+    - yamllint@1.30.0
+    - actionlint@1.6.24
+    - gitleaks@8.16.3
+    - golangci-lint@1.52.2
     - gofmt@1.19.3
     - git-diff-check
-    - prettier@2.8.4
+    - prettier@2.8.7
     - markdownlint@0.33.0
   ignore:
     - linters: [markdownlint]
@@ -23,7 +24,8 @@ lint:
         - CHANGELOG.md
 runtimes:
   enabled:
-    - go@1.18.3
+    - python@3.10.8
+    - go@1.19.5
     - node@18.12.1
 actions:
   enabled:
