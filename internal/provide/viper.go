@@ -8,11 +8,10 @@ import (
 	"github.com/Serpentiel/arikawa-boilerplate/internal/assets"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"go.uber.org/fx"
 )
 
 // Viper is a function which provides a viper.Viper instance.
-func Viper(lc fx.Lifecycle, cmd *cobra.Command) (*viper.Viper, error) {
+func Viper(cmd *cobra.Command) (*viper.Viper, error) {
 	const (
 		// configFileName is the name of the config file.
 		configFileName string = ".arikawa-boilerplate"

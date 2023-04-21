@@ -19,7 +19,7 @@ func NewRouter(
 	l logger.Logger,
 	cc *container.Cache,
 	hc *http.Client,
-	mp *message.Printer,
+	_ *message.Printer,
 	cm *cmd.Manager,
 	s *state.State,
 ) (*Router, error) {
