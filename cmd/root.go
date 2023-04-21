@@ -65,7 +65,7 @@ var rootCmd = &cobra.Command{
 				if v.GetBool("http.enabled") {
 					withHTTPServer(lc, v, l, cc, hc, mp, cm, hs)
 				} else {
-					withManager(lc, l, m)
+					withManager(lc, m)
 				}
 			}),
 		).Run()
@@ -116,7 +116,7 @@ func withHTTPServer(
 }
 
 // withManager is a function that attaches the shard manager to the lifecycle.
-func withManager(lc fx.Lifecycle, l logger.Logger, m *shard.Manager) {
+func withManager(lc fx.Lifecycle, m *shard.Manager) {
 	lc.Append(fx.Hook{
 		OnStart: func(ctx context.Context) error {
 			return m.Open(ctx)
