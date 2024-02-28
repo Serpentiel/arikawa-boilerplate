@@ -49,7 +49,7 @@ var echo = &Command{
 	},
 	Subs: map[string]*Command{
 		"normal": {
-			HandlerFunc: func(cmd *Command, s *state.State) cmdroute.CommandHandlerFunc {
+			HandlerFunc: func(cmd *Command, _ *state.State) cmdroute.CommandHandlerFunc {
 				return func(ctx context.Context, data cmdroute.CommandData) *api.InteractionResponseData {
 					return builder.NewMessageResponse(ctx, cmd.l, cmd.cc, cmd.hc).Embed(
 						data.Options.Find("text").String(),
@@ -59,7 +59,7 @@ var echo = &Command{
 			AutocompleterFunc: echoAutocompleterFunc,
 		},
 		"reverse": {
-			HandlerFunc: func(cmd *Command, s *state.State) cmdroute.CommandHandlerFunc {
+			HandlerFunc: func(cmd *Command, _ *state.State) cmdroute.CommandHandlerFunc {
 				return func(ctx context.Context, data cmdroute.CommandData) *api.InteractionResponseData {
 					return builder.NewMessageResponse(ctx, cmd.l, cmd.cc, cmd.hc).Embed(
 						util.StringReverse(data.Options.Find("text").String()),
@@ -71,7 +71,7 @@ var echo = &Command{
 	},
 }
 
-var echoAutocompleterFunc = func(cmd *Command, s *state.State) cmdroute.AutocompleterFunc {
+var echoAutocompleterFunc = func(cmd *Command, _ *state.State) cmdroute.AutocompleterFunc {
 	return func(ctx context.Context, data cmdroute.AutocompleteData) api.AutocompleteChoices {
 		if data.Options.Focused().Name != "text" {
 			return nil

@@ -26,7 +26,7 @@ import (
 // rootCmd is the rootCmd command for the application.
 var rootCmd = &cobra.Command{
 	Use: "arikawa-boilerplate",
-	Run: func(cmd *cobra.Command, args []string) {
+	Run: func(cmd *cobra.Command, _ []string) {
 		fx.New(
 			fx.Supply(cmd),
 

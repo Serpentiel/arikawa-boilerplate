@@ -30,7 +30,7 @@ func Manager(
 
 	return shard.NewManager(
 		"Bot "+v.GetString("discord.bot.token"),
-		state.NewShardFunc(func(m *shard.Manager, s *state.State) {
+		state.NewShardFunc(func(_ *shard.Manager, s *state.State) {
 			s.AddIntents(gateway.IntentGuilds)
 
 			s.AddHandler(func(e *gateway.ReadyEvent) {

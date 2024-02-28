@@ -81,7 +81,7 @@ var anime = &Command{
 			},
 		},
 	},
-	HandlerFunc: func(cmd *Command, s *state.State) cmdroute.CommandHandlerFunc {
+	HandlerFunc: func(cmd *Command, _ *state.State) cmdroute.CommandHandlerFunc {
 		var errResponse = builder.NewMessageResponse(context.Background(), cmd.l, cmd.cc, cmd.hc).
 			Error("There was an error while searching for the anime with the provided MAL ID.").
 			Build()
@@ -218,7 +218,7 @@ var anime = &Command{
 			return ird
 		}
 	},
-	AutocompleterFunc: func(cmd *Command, s *state.State) cmdroute.AutocompleterFunc {
+	AutocompleterFunc: func(cmd *Command, _ *state.State) cmdroute.AutocompleterFunc {
 		return func(ctx context.Context, data cmdroute.AutocompleteData) api.AutocompleteChoices {
 			if data.Options.Focused().Name != "query" {
 				return nil
