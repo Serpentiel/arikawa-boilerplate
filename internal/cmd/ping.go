@@ -17,7 +17,7 @@ var ping = &Command{
 		Description: "Replies with a pong",
 	},
 	HandlerFunc: func(cmd *Command, s *state.State) cmdroute.CommandHandlerFunc {
-		return func(ctx context.Context, data cmdroute.CommandData) *api.InteractionResponseData {
+		return func(ctx context.Context, _ cmdroute.CommandData) *api.InteractionResponseData {
 			return builder.NewMessageResponse(ctx, cmd.l, cmd.cc, cmd.hc).
 				Embed(cmd.mp.Sprintf(
 					"🏓 Pong! Bot's latency to Discord is %dms.", s.Gateway().Latency().Milliseconds(),
