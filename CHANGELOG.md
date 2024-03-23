@@ -7,14 +7,21 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-<!-- ### Added -->
+<!-- markdownlint-disable-next-line -->
 
-<!-- ### Changed -->
+### Added
+
+- ci: improve trunk flow
+
+<!-- markdownlint-disable-next-line -->
+
+### Changed
 
 - chore(golangci-lint): drop forced version
 - ci(lint): go-version switch to go.mod
 - chore(ci): make if statements multiline
 - ci(lint): upgrade trunk
+- ci(changelog_enforcer): add trunk skiplabel
 
 <!-- ### Deprecated -->
 
@@ -26,11 +33,15 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [2.0.0] - 2023-03-07
 
+<!-- markdownlint-disable-next-line -->
+
 ### Added
 
 - feat(bot)!: interaction server support
 - feat(cmd): anime
 - fix(anime): add sanity checks
+
+<!-- markdownlint-disable-next-line -->
 
 ### Changed
 
@@ -42,9 +53,13 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [1.0.0] - 2023-02-13
 
+<!-- markdownlint-disable-next-line -->
+
 ### Added
 
 - feat: add arikawa-boilerplate
+
+<!-- markdownlint-disable-next-line -->
 
 ### Changed
 
